@@ -138,10 +138,10 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Zero-shot scenario (Intra-lingual / ENG)</h2>
+        <button onclick="toggleTable()"></button><h2 class="title is-3">Zero-shot scenario (Intra-lingual / ENG)</h2>
         <div class="content">
           <p>
-            This is section for zero-shot scenario (Intra-lingual / ENG)
+            This is section for zero-shot scenario (Intra-lingual / EN)
           </p>
         </div>
         <h2 class="title is-5"><strong><p>Neutral</p></strong></h2>
@@ -239,10 +239,10 @@
           </tbody>
         </table>
 
-        <h2 class="title is-3">Zero-shot scenario (Intra-lingual / KOR)</h2>
+        <h2 class="title is-3">Zero-shot scenario (Intra-lingual / KO)</h2>
         <div class="content">
           <p>
-            This is section for zero-shot scenario (Intra-lingual / KOR)
+            This is section for zero-shot scenario (Intra-lingual / KO)
           </p>
         </div>
         <h2 class="title is-5"><strong><p>Neutral</p></strong></h2>
@@ -340,10 +340,10 @@
           </tbody>
         </table>
 
-        <h2 class="title is-3">Zero-shot scenario (Cross-lingual / KOR -> ENG)</h2>
+        <h2 class="title is-3">Zero-shot scenario (Cross-lingual / KO -> EN)</h2>
         <div class="content">
           <p>
-            This is section for zero-shot scenario (Cross-lingual / KOR -> ENG)
+            This is section for zero-shot scenario (Cross-lingual / KO -> EN)
           </p>
         </div>
         <h2 class="title is-5"><strong><p>Neutral</p></strong></h2>
@@ -431,10 +431,10 @@
           </tbody>
         </table>
 
-        <h2 class="title is-3">Zero-shot scenario (Cross-lingual / ENG -> KOR)</h2>
+        <h2 class="title is-3">Zero-shot scenario (Cross-lingual / EN -> KO)</h2>
         <div class="content">
           <p>
-            This is section for zero-shot scenario (Cross-lingual / ENG -> KOR)
+            This is section for zero-shot scenario (Cross-lingual / EN -> KO)
           </p>
         </div>
         <h2 class="title is-5"><strong><p>Neutral</p></strong></h2>
@@ -518,6 +518,213 @@
               <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/ganspeech/1_1_1_3.wav" type="audio/wav"></audio></td>
               <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/yourTTS/1_1_2_3.wav" type="audio/wav"></audio></td>
               <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/infinityTTS/1_1_3_3.wav" type="audio/wav"></audio></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 class="title is-3">Comparison with Data-Driven Large-Scale Model</h2>
+        <div class="content">
+          <p>
+            This is section for Comparison with Data-Driven Large-Scale Model
+          </p>
+        </div>
+        <h2 class="title is-5"><strong><p>VALL-E (Intra-lingual / EN)</p></strong></h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th align="center"><strong>Text</strong></th>
+              <th align="center"><strong>Prompt</strong></th>
+              <th align="center"><strong>Ground Truth</strong></th>
+              <th align="center"><strong>VALL-E</strong></th>
+              <th align="center"><strong>MultiVerse</strong></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td width="38%"><p>The army found the people in poverty and left them in comparative wealth.</p></td>
+              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/prompt/2_0_p_0.wav" type="audio/wav"></audio></td>
+              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/gt/2_0_0_0.wav" type="audio/wav"></audio></td>
+              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/valle/2_0_4_0.wav" type="audio/wav"></audio></td>
+              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/infinityTTS/2_0_3_0.wav" type="audio/wav"></audio></td>
+            </tr>
+            <tr>
+              <td width="38%"><p>We’ve made a couple of albums.</p></td>
+              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/prompt/2_0_p_1.wav" type="audio/wav"></audio></td>
+              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/gt/2_0_0_1.wav" type="audio/wav"></audio></td>
+              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/valle/2_0_4_1.wav" type="audio/wav"></audio></td>
+              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/infinityTTS/2_0_3_1.wav" type="audio/wav"></audio></td>
+            </tr>
+            <tr>
+              <td width="38%"><p>We have to reduce the number of plastic bags.</p></td>
+              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/prompt/2_0_p_2.wav" type="audio/wav"></audio></td>
+              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/gt/2_0_0_2.wav" type="audio/wav"></audio></td>
+              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/valle/2_0_4_2.wav" type="audio/wav"></audio></td>
+              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/infinityTTS/2_0_3_2.wav" type="audio/wav"></audio></td>
+            </tr>
+            <tr>
+              <td width="38%"><p>So what is the campaign about?</p></td>
+              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/prompt/2_0_p_3.wav" type="audio/wav"></audio></td>
+              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/gt/2_0_0_3.wav" type="audio/wav"></audio></td>
+              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/valle/2_0_4_3.wav" type="audio/wav"></audio></td>
+              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/infinityTTS/2_0_3_3.wav" type="audio/wav"></audio></td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 class="title is-5"><strong><p>VALL-E X (Crossl-lingual / ZH -> EN)</p></strong></h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th align="center"><strong>Text</strong></th>
+              <th align="center"><strong>Prompt</strong></th>
+              <th align="center"><strong>VALL-E X</strong></th>
+              <th align="center"><strong>MultiVerse</strong></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td width="38%"><p>There could be little art in this last and final round of fencing.</p></td>
+              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/prompt/3_0_p_0.wav" type="audio/wav"></audio></td>
+              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/vallex/3_0_5_0.wav" type="audio/wav"></audio></td>
+              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/infinityTTS/3_0_3_0.wav" type="audio/wav"></audio></td>
+            </tr>
+            <tr>
+              <td width="38%"><p>Look a little closer while our guide lets the light of his lamp fall upon the black wall at your side.</p></td>
+              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/prompt/3_0_p_1.wav" type="audio/wav"></audio></td>
+              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/vallex/3_0_5_1.wav" type="audio/wav"></audio></td>
+              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/infinityTTS/3_0_3_1.wav" type="audio/wav"></audio></td>
+            </tr>
+            <tr>
+              <td width="38%"><p>It was youth and poverty and proximity and everything was young and kindly.</p></td>
+              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/prompt/3_0_p_2.wav" type="audio/wav"></audio></td>
+              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/vallex/3_0_5_2.wav" type="audio/wav"></audio></td>
+              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/infinityTTS/3_0_3_2.wav" type="audio/wav"></audio></td>
+            </tr>
+            <tr>
+              <td width="38%"><p>He honours whatever he recognizes in himself, such morality equals self glorification.</p></td>
+              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/prompt/3_0_p_3.wav" type="audio/wav"></audio></td>
+              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/vallex/3_0_5_3.wav" type="audio/wav"></audio></td>
+              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/infinityTTS/3_0_3_3.wav" type="audio/wav"></audio></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 class="title is-3">Style transfer</h2>
+        <div class="content">
+          <p>
+            This section is for style transfer samples.
+          </p>
+        <h2 class="title is-5"><strong><p>Pair</p></strong></h2>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th align="center"><strong>Timbre prompt</strong></th>
+              <th align="center"><strong>Style prompt</strong></th>
+              <th align="center"><strong>Daft-exprt</strong></th>
+              <th align="center"><strong>MultiVerse</strong></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Timbre/pair/0.wav" type="audio/wav"></audio></td>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Prompt/pair/0.wav" type="audio/wav"></audio></td>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Daft/pair/0.wav.wav" type="audio/wav"></audio></td>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/infi/pair/0.wav.wav" type="audio/wav"></audio></td>
+            </tr>
+            <tr>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Timbre/pair/1.wav" type="audio/wav"></audio></td>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Prompt/pair/1.wav" type="audio/wav"></audio></td>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Daft/pair/1.wav.wav" type="audio/wav"></audio></td>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/infi/pair/1.wav.wav" type="audio/wav"></audio></td>
+            </tr>
+            <tr>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Timbre/pair/2.wav" type="audio/wav"></audio></td>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Prompt/pair/2.wav" type="audio/wav"></audio></td>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Daft/pair/2.wav.wav" type="audio/wav"></audio></td>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/infi/pair/2.wav.wav" type="audio/wav"></audio></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 class="title is-5"><strong><p>Unpair</p></strong></h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th align="center"><strong>Timbre prompt</strong></th>
+              <th align="center"><strong>Style prompt</strong></th>
+              <th align="center"><strong>Daft-exprt</strong></th>
+              <th align="center"><strong>MultiVerse</strong></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Timbre/unpair/0.wav" type="audio/wav"></audio></td>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Prompt/unpair/0.wav" type="audio/wav"></audio></td>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Daft/unpair/0.wav.wav" type="audio/wav"></audio></td>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/infi/unpair/0.wav.wav" type="audio/wav"></audio></td>
+            </tr>
+            <tr>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Timbre/unpair/1.wav" type="audio/wav"></audio></td>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Prompt/unpair/1.wav" type="audio/wav"></audio></td>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Daft/unpair/1.wav.wav" type="audio/wav"></audio></td>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/infi/unpair/1.wav.wav" type="audio/wav"></audio></td>
+            </tr>
+            <tr>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Timbre/unpair/2.wav" type="audio/wav"></audio></td>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Prompt/unpair/2.wav" type="audio/wav"></audio></td>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Daft/unpair/2.wav.wav" type="audio/wav"></audio></td>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/infi/unpair/2.wav.wav" type="audio/wav"></audio></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 class="title is-3">Controllability</h2>
+        <div class="content">
+          <p>
+            This section is for controllability samples.
+          </p>
+        <h2 class="title is-5"><strong><p>Pitch</p></strong></h2>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th align="center"><strong>-6</strong></th>
+              <th align="center"><strong>-4</strong></th>
+              <th align="center"><strong>-2</strong></th>
+              <th align="center"><strong>0</strong></th>
+              <th align="center"><strong>+2</strong></th>
+              <th align="center"><strong>+4</strong></th>
+              <th align="center"><strong>+6</strong></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/pitch_control/wav/0_-6.wav" type="audio/wav"></audio></td>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/pitch_control/wav/0_-4.wav" type="audio/wav"></audio></td>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/pitch_control/wav/0_-2.wav" type="audio/wav"></audio></td>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/pitch_control/wav/0_0.wav" type="audio/wav"></audio></td>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/pitch_control/wav/0_2.wav" type="audio/wav"></audio></td>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/pitch_control/wav/0_4.wav" type="audio/wav"></audio></td>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/pitch_control/wav/0_6.wav" type="audio/wav"></audio></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 class="title is-5"><strong><p>Duration</p></strong></h2>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th align="center"><strong>0.5x</strong></th>
+              <th align="center"><strong>0</strong></th>
+              <th align="center"><strong>2x</strong></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/duration_control/wav/0_2.0.wav" type="audio/wav"></audio></td>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/duration_control/wav/0_1.wav" type="audio/wav"></audio></td>
+              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/duration_control/wav/0_0.5.wav" type="audio/wav"></audio></td>
             </tr>
           </tbody>
         </table>
@@ -634,6 +841,17 @@
     </div>
   </div>
 </footer>
+
+<script>
+  function toggleTable(tableID){
+    var table = document.getElementByID(tabeID);
+    if (table.style.display === "none") {
+      table.style.display = "table";
+    } else {
+      table.style.display = "none";
+    }
+  }
+</script>
 
 </body>
 </html>
