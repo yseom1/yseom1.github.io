@@ -7,6 +7,11 @@
   <meta name="keywords" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MultiVerse</title>
+  <style>
+    .hidden-content {
+      display: none;
+    }
+  </style>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-L7749G0HJZ"></script>
@@ -138,106 +143,108 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
-        <button onclick="toggleTable()"></button><h2 class="title is-3">Zero-shot scenario (Intra-lingual / ENG)</h2>
-        <div class="content">
-          <p>
-            This is section for zero-shot scenario (Intra-lingual / EN)
-          </p>
+        <h2 onclick="toggleContent('section1')" class="title is-3">Zero-shot scenario (Intra-lingual / ENG)</h2>
+        <div id="section1" class="hidden-content">
+          <div class="content">
+            <p>
+              This is section for zero-shot scenario (Intra-lingual / EN)
+            </p>
+          </div>
+          <h2 class="title is-5"><strong><p>Neutral</p></strong></h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th align="center"><strong>Text</strong></th>
+                <th align="center"><strong>Prompt</strong></th>
+                <th align="center"><strong>Ground Truth</strong></th>
+                <th align="center"><strong>GANSpeech</strong></th>
+                <th align="center"><strong>YourTTS</strong></th>
+                <th align="center"><strong>MultiVerse</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td width="38%"><p>Fitzgerald was still trying to find out how the germ had been transmitted.</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/prompt/0_0_p_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/gt/0_0_0_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/ganspeech/0_0_1_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/yourTTS/0_0_2_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/infinityTTS/0_0_3_0.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="38%"><p>In all our history you are the first people from outside our borders who have ever stepped a foot in our land.</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/prompt/0_0_p_1.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/gt/0_0_0_1.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/ganspeech/0_0_1_1.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/yourTTS/0_0_2_1.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/infinityTTS/0_0_3_1.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="38%"><p>The native American has been generally despised by his white conquerors for his poverty and simplicity.</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/prompt/0_0_p_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/gt/0_0_0_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/ganspeech/0_0_1_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/yourTTS/0_0_2_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/infinityTTS/0_0_3_2.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="38%"><p>The guard chanced to be Lumpy Bates, and he administered, what to him, was a gentle kick, to hurry the boy along.</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/prompt/0_0_p_3.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/gt/0_0_0_3.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/ganspeech/0_0_1_3.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/yourTTS/0_0_2_3.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/infinityTTS/0_0_3_3.wav" type="audio/wav"></audio></td>
+              </tr>
+            </tbody>
+          </table>
+          <h2 class="title is-5"><strong><p>Expressive</p></strong></h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th align="center"><strong>Text</strong></th>
+                <th align="center"><strong>Prompt</strong></th>
+                <th align="center"><strong>Ground Truth</strong></th>
+                <th align="center"><strong>GANSpeech</strong></th>
+                <th align="center"><strong>YourTTS</strong></th>
+                <th align="center"><strong>MultiVerse</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td width="38%"><p>Anti aging creams can bring on breakouts.</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/prompt/0_1_p_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/gt/0_1_0_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/ganspeech/0_1_1_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/yourTTS/0_1_2_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/infinityTTS/0_1_3_0.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="38%"><p>Could you start researching boarding schools?</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/prompt/0_1_p_1.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/gt/0_1_0_1.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/ganspeech/0_1_1_1.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/yourTTS/0_1_2_1.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/infinityTTS/0_1_3_1.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="38%"><p>But some other folks are making silly sounds!</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/prompt/0_1_p_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/gt/0_1_0_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/ganspeech/0_1_1_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/yourTTS/0_1_2_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/infinityTTS/0_1_3_2.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="38%"><p>Dishes available at Kitchen Pantry Parlor.</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/prompt/0_1_p_3.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/gt/0_1_0_3.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/ganspeech/0_1_1_3.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/yourTTS/0_1_2_3.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/infinityTTS/0_1_3_3.wav" type="audio/wav"></audio></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <h2 class="title is-5"><strong><p>Neutral</p></strong></h2>
-        <table class="table">
-          <thead>
-            <tr>
-              <th align="center"><strong>Text</strong></th>
-              <th align="center"><strong>Prompt</strong></th>
-              <th align="center"><strong>Ground Truth</strong></th>
-              <th align="center"><strong>GANSpeech</strong></th>
-              <th align="center"><strong>YourTTS</strong></th>
-              <th align="center"><strong>MultiVerse</strong></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td width="38%"><p>Fitzgerald was still trying to find out how the germ had been transmitted.</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/prompt/0_0_p_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/gt/0_0_0_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/ganspeech/0_0_1_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/yourTTS/0_0_2_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/infinityTTS/0_0_3_0.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="38%"><p>In all our history you are the first people from outside our borders who have ever stepped a foot in our land.</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/prompt/0_0_p_1.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/gt/0_0_0_1.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/ganspeech/0_0_1_1.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/yourTTS/0_0_2_1.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/infinityTTS/0_0_3_1.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="38%"><p>The native American has been generally despised by his white conquerors for his poverty and simplicity.</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/prompt/0_0_p_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/gt/0_0_0_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/ganspeech/0_0_1_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/yourTTS/0_0_2_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/infinityTTS/0_0_3_2.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="38%"><p>The guard chanced to be Lumpy Bates, and he administered, what to him, was a gentle kick, to hurry the boy along.</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/prompt/0_0_p_3.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/gt/0_0_0_3.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/ganspeech/0_0_1_3.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/yourTTS/0_0_2_3.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Normal/infinityTTS/0_0_3_3.wav" type="audio/wav"></audio></td>
-            </tr>
-          </tbody>
-        </table>
-        <h2 class="title is-5"><strong><p>Expressive</p></strong></h2>
-        <table class="table">
-          <thead>
-            <tr>
-              <th align="center"><strong>Text</strong></th>
-              <th align="center"><strong>Prompt</strong></th>
-              <th align="center"><strong>Ground Truth</strong></th>
-              <th align="center"><strong>GANSpeech</strong></th>
-              <th align="center"><strong>YourTTS</strong></th>
-              <th align="center"><strong>MultiVerse</strong></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td width="38%"><p>Anti aging creams can bring on breakouts.</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/prompt/0_1_p_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/gt/0_1_0_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/ganspeech/0_1_1_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/yourTTS/0_1_2_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/infinityTTS/0_1_3_0.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="38%"><p>Could you start researching boarding schools?</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/prompt/0_1_p_1.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/gt/0_1_0_1.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/ganspeech/0_1_1_1.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/yourTTS/0_1_2_1.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/infinityTTS/0_1_3_1.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="38%"><p>But some other folks are making silly sounds!</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/prompt/0_1_p_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/gt/0_1_0_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/ganspeech/0_1_1_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/yourTTS/0_1_2_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/infinityTTS/0_1_3_2.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="38%"><p>Dishes available at Kitchen Pantry Parlor.</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/prompt/0_1_p_3.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/gt/0_1_0_3.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/ganspeech/0_1_1_3.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/yourTTS/0_1_2_3.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/ZS/Expressive/infinityTTS/0_1_3_3.wav" type="audio/wav"></audio></td>
-            </tr>
-          </tbody>
-        </table>
 
         <h2 class="title is-3">Zero-shot scenario (Intra-lingual / KO)</h2>
         <div class="content">
@@ -842,10 +849,10 @@
 </footer>
 
 <script>
-  function toggleTable(tableID){
-    var table = document.getElementByID(tabeID);
+  function toggleContent(ContentID){
+    var table = document.getElementByID(ContentID);
     if (table.style.display === "none") {
-      table.style.display = "table";
+      table.style.display = "block";
     } else {
       table.style.display = "none";
     }
