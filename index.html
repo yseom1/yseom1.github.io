@@ -850,11 +850,11 @@
 
 <script>
   function toggleContent(ContentID){
-    var table = document.getElementByID(ContentID);
-    if (table.style.display === "none") {
-      table.style.display = "block";
+    var contentDiv = document.getElementByID(ContentID);
+    if (contentDiv.style.display === "none") {
+      contentDiv.style.display = "block";
     } else {
-      table.style.display = "none";
+      contentDiv.style.display = "none";
     }
   }
 </script>
