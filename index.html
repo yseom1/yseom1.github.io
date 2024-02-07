@@ -849,15 +849,11 @@
 </footer>
 
 <script>
-  function toggleContent(ContentID) {
-    var contentDiv = document.getElementByID(ContentID);
-    if (contentDiv.style.display === "none" || contentDiv.style.display === "") {
-      contentDiv.style.display = "block";
-    } else {
-      contentDiv.style.display = "none";
-    }
+  function toggleContent(sectionId) {
+    var contentDiv = document.getElementById(sectionId);
+    contentDiv.style.display = (contentDiv.style.display === "none" || contentDiv.style.display === "") ? "block" : "none";
   }
-</script>
+ </script>
 
 </body>
 </html>
