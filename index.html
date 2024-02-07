@@ -849,9 +849,9 @@
 </footer>
 
 <script>
-  function toggleContent(ContentID){
+  function toggleContent(ContentID) {
     var contentDiv = document.getElementByID(ContentID);
-    if (contentDiv.style.display === "none") {
+    if (contentDiv.style.display === "none" || contentDiv.style.display === "") {
       contentDiv.style.display = "block";
     } else {
       contentDiv.style.display = "none";
