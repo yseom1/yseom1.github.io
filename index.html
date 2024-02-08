@@ -14,7 +14,7 @@
     /* Style for the image button */
     .image-button {
       cursor: pointer;
-      max-width: 15%;
+      max-width: 8%;
       height: auto;
     }
  </style>
@@ -252,542 +252,569 @@
             </tbody>
           </table>
         </div>
+        <br>
 
         <h2 class="title is-3">Zero-shot scenario (Intra-lingual / KO)</h2>
-        <div class="content">
-          <p>
-            This is section for zero-shot scenario (Intra-lingual / KO)
-          </p>
+        <img class="image-button" id="image2" src="static/images/button_off.png" alt="Toggle Button 2" onclick="toggleContent('section2')">
+        <div id="section2" class="hidden-content">
+          <div class="content">
+            <p>
+              This is section for zero-shot scenario (Intra-lingual / KO)
+            </p>
+          </div>
+          <h2 class="title is-5"><strong><p>Neutral</p></strong></h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th align="center"><strong>Text</strong></th>
+                <th align="center"><strong>Prompt</strong></th>
+                <th align="center"><strong>Ground Truth</strong></th>
+                <th align="center"><strong>GANSpeech</strong></th>
+                <th align="center"><strong>YourTTS</strong></th>
+                <th align="center"><strong>MultiVerse</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td width="38%"><p>오늘 바람이 센 편이니 조심하세요.<br>(oneul barami sen pyeonini josimhaseyo.)</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/prompt/0_0_p_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/gt/0_0_0_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/ganspeech/0_0_1_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/yourTTS/0_0_2_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/infinityTTS/0_0_3_0.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="38%"><p>진짜 큰 문제는 시작도 안 됐다.<br>(jinjja keun munjeneun sijakdo an dwaessda.)</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/prompt/0_0_p_1.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/gt/0_0_0_1.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/ganspeech/0_0_1_1.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/yourTTS/0_0_2_1.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/infinityTTS/0_0_3_1.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="38%"><p>내일 동작구의 풍향은 북풍으로 관측됩니다.<br>(naeil dongjakguui punghyangeun bukpungeuro gwancheukdoepnida.)</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/prompt/0_0_p_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/gt/0_0_0_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/ganspeech/0_0_1_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/yourTTS/0_0_2_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/infinityTTS/0_0_3_2.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="38%"><p>도서관에 비치된 월간지를 검색할게요.<br>(doseogwane bichidoen wolganjireul geomsaekhalgeyo.)</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/prompt/0_0_p_3.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/gt/0_0_0_3.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/ganspeech/0_0_1_3.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/yourTTS/0_0_2_3.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/infinityTTS/0_0_3_3.wav" type="audio/wav"></audio></td>
+              </tr>
+            </tbody>
+          </table>
+          <h2 class="title is-5"><strong><p>Expressive</p></strong></h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th align="center"><strong>Text</strong></th>
+                <th align="center"><strong>Prompt</strong></th>
+                <th align="center"><strong>Ground Truth</strong></th>
+                <th align="center"><strong>GANSpeech</strong></th>
+                <th align="center"><strong>YourTTS</strong></th>
+                <th align="center"><strong>MultiVerse</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td width="38%"><p>마음이 편한 곳으로 가더니 만족한 표정을 지었다.<br>(maeumi pyeonhan goseuro gadeoni manjokhan pyojeongeul jieossda.)</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/prompt/0_1_p_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/gt/0_1_0_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/ganspeech/0_1_1_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/yourTTS/0_1_2_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/infinityTTS/0_1_3_0.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="38%"><p>누나 오빠라고 부를수 없는 처지가 괴로웠다.<br>(nuna opparago bureulsu eopsneun cheojiga goerowossda.)</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/prompt/0_1_p_1.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/gt/0_1_0_1.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/ganspeech/0_1_1_1.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/yourTTS/0_1_2_1.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/infinityTTS/0_1_3_1.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="38%"><p>다음은 나의 주위에 대한 실망이다.<br>(daeumeun naui juwie daehan silmangida.)</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/prompt/0_1_p_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/gt/0_1_0_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/ganspeech/0_1_1_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/yourTTS/0_1_2_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/infinityTTS/0_1_3_2.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="38%"><p>요즘 놀이터에는 방방이가 있대요!<br>(yojeum noriteoeneun bangbangiga issdaeyo!)</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/prompt/0_1_p_3.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/gt/0_1_0_3.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/ganspeech/0_1_1_3.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/yourTTS/0_1_2_3.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/infinityTTS/0_1_3_3.wav" type="audio/wav"></audio></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <h2 class="title is-5"><strong><p>Neutral</p></strong></h2>
-        <table class="table">
-          <thead>
-            <tr>
-              <th align="center"><strong>Text</strong></th>
-              <th align="center"><strong>Prompt</strong></th>
-              <th align="center"><strong>Ground Truth</strong></th>
-              <th align="center"><strong>GANSpeech</strong></th>
-              <th align="center"><strong>YourTTS</strong></th>
-              <th align="center"><strong>MultiVerse</strong></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td width="38%"><p>오늘 바람이 센 편이니 조심하세요.<br>(oneul barami sen pyeonini josimhaseyo.)</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/prompt/0_0_p_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/gt/0_0_0_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/ganspeech/0_0_1_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/yourTTS/0_0_2_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/infinityTTS/0_0_3_0.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="38%"><p>진짜 큰 문제는 시작도 안 됐다.<br>(jinjja keun munjeneun sijakdo an dwaessda.)</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/prompt/0_0_p_1.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/gt/0_0_0_1.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/ganspeech/0_0_1_1.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/yourTTS/0_0_2_1.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/infinityTTS/0_0_3_1.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="38%"><p>내일 동작구의 풍향은 북풍으로 관측됩니다.<br>(naeil dongjakguui punghyangeun bukpungeuro gwancheukdoepnida.)</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/prompt/0_0_p_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/gt/0_0_0_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/ganspeech/0_0_1_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/yourTTS/0_0_2_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/infinityTTS/0_0_3_2.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="38%"><p>도서관에 비치된 월간지를 검색할게요.<br>(doseogwane bichidoen wolganjireul geomsaekhalgeyo.)</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/prompt/0_0_p_3.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/gt/0_0_0_3.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/ganspeech/0_0_1_3.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/yourTTS/0_0_2_3.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Normal/infinityTTS/0_0_3_3.wav" type="audio/wav"></audio></td>
-            </tr>
-          </tbody>
-        </table>
-        <h2 class="title is-5"><strong><p>Expressive</p></strong></h2>
-        <table class="table">
-          <thead>
-            <tr>
-              <th align="center"><strong>Text</strong></th>
-              <th align="center"><strong>Prompt</strong></th>
-              <th align="center"><strong>Ground Truth</strong></th>
-              <th align="center"><strong>GANSpeech</strong></th>
-              <th align="center"><strong>YourTTS</strong></th>
-              <th align="center"><strong>MultiVerse</strong></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td width="38%"><p>마음이 편한 곳으로 가더니 만족한 표정을 지었다.<br>(maeumi pyeonhan goseuro gadeoni manjokhan pyojeongeul jieossda.)</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/prompt/0_1_p_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/gt/0_1_0_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/ganspeech/0_1_1_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/yourTTS/0_1_2_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/infinityTTS/0_1_3_0.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="38%"><p>누나 오빠라고 부를수 없는 처지가 괴로웠다.<br>(nuna opparago bureulsu eopsneun cheojiga goerowossda.)</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/prompt/0_1_p_1.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/gt/0_1_0_1.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/ganspeech/0_1_1_1.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/yourTTS/0_1_2_1.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/infinityTTS/0_1_3_1.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="38%"><p>다음은 나의 주위에 대한 실망이다.<br>(daeumeun naui juwie daehan silmangida.)</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/prompt/0_1_p_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/gt/0_1_0_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/ganspeech/0_1_1_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/yourTTS/0_1_2_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/infinityTTS/0_1_3_2.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="38%"><p>요즘 놀이터에는 방방이가 있대요!<br>(yojeum noriteoeneun bangbangiga issdaeyo!)</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/prompt/0_1_p_3.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/gt/0_1_0_3.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/ganspeech/0_1_1_3.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/yourTTS/0_1_2_3.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/ZS/Expressive/infinityTTS/0_1_3_3.wav" type="audio/wav"></audio></td>
-            </tr>
-          </tbody>
-        </table>
+        <br>
 
         <h2 class="title is-3">Zero-shot scenario (Cross-lingual / KO -> EN)</h2>
-        <div class="content">
-          <p>
-            This is section for zero-shot scenario (Cross-lingual / KO -> EN)
-          </p>
+        <img class="image-button" id="image3" src="static/images/button_off.png" alt="Toggle Button 3" onclick="toggleContent('section3')">
+        <div id="section3" class="hidden-content">
+          <div class="content">
+            <p>
+              This is section for zero-shot scenario (Cross-lingual / KO -> EN)
+            </p>
+          </div>
+          <h2 class="title is-5"><strong><p>Neutral</p></strong></h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th align="center"><strong>Text</strong></th>
+                <th align="center"><strong>Prompt</strong></th>
+                <th align="center"><strong>GANSpeech</strong></th>
+                <th align="center"><strong>YourTTS</strong></th>
+                <th align="center"><strong>MultiVerse</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td width="38%"><p>They have too often shown their patriotism by murdering their generals, underrating their enemies and slighting their friends.</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Normal/prompt/1_0_p_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Normal/ganspeech/1_0_1_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Normal/yourTTS/1_0_2_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Normal/infinityTTS/1_0_3_0.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="38%"><p>I think you ought to write and tell him, and perhaps invite him here for the holidays.</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Normal/prompt/1_0_p_1.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Normal/ganspeech/1_0_1_1.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Normal/yourTTS/1_0_2_1.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Normal/infinityTTS/1_0_3_1.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="38%"><p>And again, it would be hard if I were not allowed to investigate the pedigree of the woman I hope to win for my wife.</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Normal/prompt/1_0_p_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Normal/ganspeech/1_0_1_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Normal/yourTTS/1_0_2_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Normal/infinityTTS/1_0_3_2.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="38%"><p>I will lie down in my clothes, and keep watch, ready to listen, or to follow her if need be.</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Normal/prompt/1_0_p_3.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Normal/ganspeech/1_0_1_3.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Normal/yourTTS/1_0_2_3.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Normal/infinityTTS/1_0_3_3.wav" type="audio/wav"></audio></td>
+              </tr>
+            </tbody>
+          </table>
+          <h2 class="title is-5"><strong><p>Expressive</p></strong></h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th align="center"><strong>Text</strong></th>
+                <th align="center"><strong>Prompt</strong></th>
+                <th align="center"><strong>GANSpeech</strong></th>
+                <th align="center"><strong>YourTTS</strong></th>
+                <th align="center"><strong>MultiVerse</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td width="38%"><p>few women of my age that haven't seen a good deal of family troubles and family secrets.</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Expressive/prompt/1_1_p_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Expressive/ganspeech/1_1_1_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Expressive/yourTTS/1_1_2_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Expressive/infinityTTS/1_1_3_0.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="38%"><p>He looked from the miniature to the crest and back to the miniature again, then at Alice.</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Expressive/prompt/1_1_p_1.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Expressive/ganspeech/1_1_1_1.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Expressive/yourTTS/1_1_2_1.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Expressive/infinityTTS/1_1_3_1.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="38%"><p>Do you think we will learn anything from him? We will learn all we wish to know as to where he obtained his material.</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Expressive/prompt/1_1_p_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Expressive/ganspeech/1_1_1_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Expressive/yourTTS/1_1_2_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Expressive/infinityTTS/1_1_3_2.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="38%"><p>You have come to the wrong place, she flung in.</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Expressive/prompt/1_1_p_3.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Expressive/ganspeech/1_1_1_3.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Expressive/yourTTS/1_1_2_3.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Expressive/infinityTTS/1_1_3_3.wav" type="audio/wav"></audio></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <h2 class="title is-5"><strong><p>Neutral</p></strong></h2>
-        <table class="table">
-          <thead>
-            <tr>
-              <th align="center"><strong>Text</strong></th>
-              <th align="center"><strong>Prompt</strong></th>
-              <th align="center"><strong>GANSpeech</strong></th>
-              <th align="center"><strong>YourTTS</strong></th>
-              <th align="center"><strong>MultiVerse</strong></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td width="38%"><p>They have too often shown their patriotism by murdering their generals, underrating their enemies and slighting their friends.</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Normal/prompt/1_0_p_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Normal/ganspeech/1_0_1_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Normal/yourTTS/1_0_2_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Normal/infinityTTS/1_0_3_0.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="38%"><p>I think you ought to write and tell him, and perhaps invite him here for the holidays.</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Normal/prompt/1_0_p_1.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Normal/ganspeech/1_0_1_1.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Normal/yourTTS/1_0_2_1.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Normal/infinityTTS/1_0_3_1.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="38%"><p>And again, it would be hard if I were not allowed to investigate the pedigree of the woman I hope to win for my wife.</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Normal/prompt/1_0_p_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Normal/ganspeech/1_0_1_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Normal/yourTTS/1_0_2_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Normal/infinityTTS/1_0_3_2.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="38%"><p>I will lie down in my clothes, and keep watch, ready to listen, or to follow her if need be.</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Normal/prompt/1_0_p_3.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Normal/ganspeech/1_0_1_3.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Normal/yourTTS/1_0_2_3.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Normal/infinityTTS/1_0_3_3.wav" type="audio/wav"></audio></td>
-            </tr>
-          </tbody>
-        </table>
-        <h2 class="title is-5"><strong><p>Expressive</p></strong></h2>
-        <table class="table">
-          <thead>
-            <tr>
-              <th align="center"><strong>Text</strong></th>
-              <th align="center"><strong>Prompt</strong></th>
-              <th align="center"><strong>GANSpeech</strong></th>
-              <th align="center"><strong>YourTTS</strong></th>
-              <th align="center"><strong>MultiVerse</strong></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td width="38%"><p>few women of my age that haven't seen a good deal of family troubles and family secrets.</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Expressive/prompt/1_1_p_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Expressive/ganspeech/1_1_1_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Expressive/yourTTS/1_1_2_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Expressive/infinityTTS/1_1_3_0.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="38%"><p>He looked from the miniature to the crest and back to the miniature again, then at Alice.</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Expressive/prompt/1_1_p_1.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Expressive/ganspeech/1_1_1_1.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Expressive/yourTTS/1_1_2_1.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Expressive/infinityTTS/1_1_3_1.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="38%"><p>Do you think we will learn anything from him? We will learn all we wish to know as to where he obtained his material.</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Expressive/prompt/1_1_p_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Expressive/ganspeech/1_1_1_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Expressive/yourTTS/1_1_2_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Expressive/infinityTTS/1_1_3_2.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="38%"><p>You have come to the wrong place, she flung in.</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Expressive/prompt/1_1_p_3.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Expressive/ganspeech/1_1_1_3.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Expressive/yourTTS/1_1_2_3.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/CL/Expressive/infinityTTS/1_1_3_3.wav" type="audio/wav"></audio></td>
-            </tr>
-          </tbody>
-        </table>
+        <br>
 
         <h2 class="title is-3">Zero-shot scenario (Cross-lingual / EN -> KO)</h2>
-        <div class="content">
-          <p>
-            This is section for zero-shot scenario (Cross-lingual / EN -> KO)
-          </p>
+        <img class="image-button" id="image4" src="static/images/button_off.png" alt="Toggle Button 4" onclick="toggleContent('section4')">
+        <div id="section4" class="hidden-content">
+          <div class="content">
+            <p>
+              This is section for zero-shot scenario (Cross-lingual / EN -> KO)
+            </p>
+          </div>
+          <h2 class="title is-5"><strong><p>Neutral</p></strong></h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th align="center"><strong>Text</strong></th>
+                <th align="center"><strong>Prompt</strong></th>
+                <th align="center"><strong>GANSpeech</strong></th>
+                <th align="center"><strong>YourTTS</strong></th>
+                <th align="center"><strong>MultiVerse</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td width="38%"><p>팔레스타인 인들은 예루살렘으로 계속 진군하겠습니다.<br>(palleseutain indeureun yerusallemeuro gyesok jingunhagessseupnida.)</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Normal/prompt/1_0_p_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Normal/ganspeech/1_0_1_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Normal/yourTTS/1_0_2_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Normal/infinityTTS/1_0_3_0.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="38%"><p>이미 소매치기 수법과 조직을 꿰고 있던 서씨에게는 소매치기가 낯설지 않았습니다.<br>(imi somaechigi subeopgwa jojigeul kkwego issdeon seossiegeneun somaechigiga naccseolji anhassseupnida.)</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Normal/prompt/1_0_p_1.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Normal/ganspeech/1_0_1_1.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Normal/yourTTS/1_0_2_1.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Normal/infinityTTS/1_0_3_1.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="38%"><p>연씨와 언론의 이 같은 숨바꼭질은 일일이 처음은 아닙니다.<br>(yeonssiwa eonronui i gateun sumbakkokjireun iriri cheoeumeun anipnida.)</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Normal/prompt/1_0_p_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Normal/ganspeech/1_0_1_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Normal/yourTTS/1_0_2_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Normal/infinityTTS/1_0_3_2.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="38%"><p>이렇게 논란이 확산되자 백화점 관계자들은 내일 긴급 회의를 열어 경품자제를 협의하기로 했습니다.<br>(ireohge nonrani hwaksandoeja baekhwajeom gwangyejadeureun naeil gingeup hoeuireul yeoreo gyeongpumjajereul hyeobuihagiro haessseupnida.)</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Normal/prompt/1_0_p_3.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Normal/ganspeech/1_0_1_3.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Normal/yourTTS/1_0_2_3.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Normal/infinityTTS/1_0_3_3.wav" type="audio/wav"></audio></td>
+              </tr>
+            </tbody>
+          </table>
+          <h2 class="title is-5"><strong><p>Expressive</p></strong></h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th align="center"><strong>Text</strong></th>
+                <th align="center"><strong>Prompt</strong></th>
+                <th align="center"><strong>GANSpeech</strong></th>
+                <th align="center"><strong>YourTTS</strong></th>
+                <th align="center"><strong>MultiVerse</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td width="38%"><p>옹달샘 주위는 한겨울에도 푸르름을 자랑해 주위와 대조를 이룹니다.<br>(ongdalsaem juwineun hangyeouredo pureureumeul jaranghae juwiwa daejoreul irupnida.)</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/prompt/1_1_p_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/ganspeech/1_1_1_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/yourTTS/1_1_2_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/infinityTTS/1_1_3_0.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="38%"><p>인구뿐만 아니라 지역 대표성도 고려해야 한다는 주장이었습니다.<br>(inguppunman anira jiyeok daepyoseongdo goryeohaeya handaneun jujangieossseupnida.)</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/prompt/1_1_p_1.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/ganspeech/1_1_1_1.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/yourTTS/1_1_2_1.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/infinityTTS/1_1_3_1.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="38%"><p>비를 무릅쓰고 벼를 일으켜 세우지만 속수무책입니다.<br>(bireul mureupsseugo byeoreul ireukyeo seujiman soksumuchaegipnida.)</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/prompt/1_1_p_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/ganspeech/1_1_1_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/yourTTS/1_1_2_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/infinityTTS/1_1_3_2.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="38%"><p>유리창은 산산조각이 났고 타이어까지도 펑크가 났습니다.<br>(yurichangeun sansanjogagi nassgo taieokkajido peongkeuga nassseupnida.)</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/prompt/1_1_p_3.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/ganspeech/1_1_1_3.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/yourTTS/1_1_2_3.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/infinityTTS/1_1_3_3.wav" type="audio/wav"></audio></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <h2 class="title is-5"><strong><p>Neutral</p></strong></h2>
-        <table class="table">
-          <thead>
-            <tr>
-              <th align="center"><strong>Text</strong></th>
-              <th align="center"><strong>Prompt</strong></th>
-              <th align="center"><strong>GANSpeech</strong></th>
-              <th align="center"><strong>YourTTS</strong></th>
-              <th align="center"><strong>MultiVerse</strong></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td width="38%"><p>팔레스타인 인들은 예루살렘으로 계속 진군하겠습니다.<br>(palleseutain indeureun yerusallemeuro gyesok jingunhagessseupnida.)</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Normal/prompt/1_0_p_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Normal/ganspeech/1_0_1_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Normal/yourTTS/1_0_2_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Normal/infinityTTS/1_0_3_0.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="38%"><p>이미 소매치기 수법과 조직을 꿰고 있던 서씨에게는 소매치기가 낯설지 않았습니다.<br>(imi somaechigi subeopgwa jojigeul kkwego issdeon seossiegeneun somaechigiga naccseolji anhassseupnida.)</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Normal/prompt/1_0_p_1.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Normal/ganspeech/1_0_1_1.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Normal/yourTTS/1_0_2_1.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Normal/infinityTTS/1_0_3_1.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="38%"><p>연씨와 언론의 이 같은 숨바꼭질은 일일이 처음은 아닙니다.<br>(yeonssiwa eonronui i gateun sumbakkokjireun iriri cheoeumeun anipnida.)</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Normal/prompt/1_0_p_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Normal/ganspeech/1_0_1_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Normal/yourTTS/1_0_2_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Normal/infinityTTS/1_0_3_2.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="38%"><p>이렇게 논란이 확산되자 백화점 관계자들은 내일 긴급 회의를 열어 경품자제를 협의하기로 했습니다.<br>(ireohge nonrani hwaksandoeja baekhwajeom gwangyejadeureun naeil gingeup hoeuireul yeoreo gyeongpumjajereul hyeobuihagiro haessseupnida.)</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Normal/prompt/1_0_p_3.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Normal/ganspeech/1_0_1_3.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Normal/yourTTS/1_0_2_3.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Normal/infinityTTS/1_0_3_3.wav" type="audio/wav"></audio></td>
-            </tr>
-          </tbody>
-        </table>
-        <h2 class="title is-5"><strong><p>Expressive</p></strong></h2>
-        <table class="table">
-          <thead>
-            <tr>
-              <th align="center"><strong>Text</strong></th>
-              <th align="center"><strong>Prompt</strong></th>
-              <th align="center"><strong>GANSpeech</strong></th>
-              <th align="center"><strong>YourTTS</strong></th>
-              <th align="center"><strong>MultiVerse</strong></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td width="38%"><p>옹달샘 주위는 한겨울에도 푸르름을 자랑해 주위와 대조를 이룹니다.<br>(ongdalsaem juwineun hangyeouredo pureureumeul jaranghae juwiwa daejoreul irupnida.)</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/prompt/1_1_p_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/ganspeech/1_1_1_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/yourTTS/1_1_2_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/infinityTTS/1_1_3_0.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="38%"><p>인구뿐만 아니라 지역 대표성도 고려해야 한다는 주장이었습니다.<br>(inguppunman anira jiyeok daepyoseongdo goryeohaeya handaneun jujangieossseupnida.)</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/prompt/1_1_p_1.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/ganspeech/1_1_1_1.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/yourTTS/1_1_2_1.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/infinityTTS/1_1_3_1.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="38%"><p>비를 무릅쓰고 벼를 일으켜 세우지만 속수무책입니다.<br>(bireul mureupsseugo byeoreul ireukyeo seujiman soksumuchaegipnida.)</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/prompt/1_1_p_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/ganspeech/1_1_1_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/yourTTS/1_1_2_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/infinityTTS/1_1_3_2.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="38%"><p>유리창은 산산조각이 났고 타이어까지도 펑크가 났습니다.<br>(yurichangeun sansanjogagi nassgo taieokkajido peongkeuga nassseupnida.)</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/prompt/1_1_p_3.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/ganspeech/1_1_1_3.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/yourTTS/1_1_2_3.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_kor/CL/Expressive/infinityTTS/1_1_3_3.wav" type="audio/wav"></audio></td>
-            </tr>
-          </tbody>
-        </table>
+        <br>
 
         <h2 class="title is-3">Comparison with Data-Driven Large-Scale Model</h2>
-        <div class="content">
-          <p>
-            This is section for Comparison with Data-Driven Large-Scale Model
-          </p>
+        <img class="image-button" id="image5" src="static/images/button_off.png" alt="Toggle Button 5" onclick="toggleContent('section5')">
+        <div id="section5" class="hidden-content">
+          <div class="content">
+            <p>
+              This is section for Comparison with Data-Driven Large-Scale Model
+            </p>
+          </div>
+          <h2 class="title is-5"><strong><p>VALL-E (Intra-lingual / EN)</p></strong></h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th align="center"><strong>Text</strong></th>
+                <th align="center"><strong>Prompt</strong></th>
+                <th align="center"><strong>Ground Truth</strong></th>
+                <th align="center"><strong>VALL-E</strong></th>
+                <th align="center"><strong>MultiVerse</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td width="38%"><p>The army found the people in poverty and left them in comparative wealth.</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/prompt/2_0_p_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/gt/2_0_0_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/valle/2_0_4_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/infinityTTS/2_0_3_0.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="38%"><p>We’ve made a couple of albums.</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/prompt/2_0_p_1.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/gt/2_0_0_1.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/valle/2_0_4_1.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/infinityTTS/2_0_3_1.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="38%"><p>We have to reduce the number of plastic bags.</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/prompt/2_0_p_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/gt/2_0_0_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/valle/2_0_4_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/infinityTTS/2_0_3_2.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="38%"><p>So what is the campaign about?</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/prompt/2_0_p_3.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/gt/2_0_0_3.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/valle/2_0_4_3.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/infinityTTS/2_0_3_3.wav" type="audio/wav"></audio></td>
+              </tr>
+            </tbody>
+          </table>
+          <h2 class="title is-5"><strong><p>VALL-E X (Crossl-lingual / ZH -> EN)</p></strong></h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th align="center"><strong>Text</strong></th>
+                <th align="center"><strong>Prompt</strong></th>
+                <th align="center"><strong>VALL-E X</strong></th>
+                <th align="center"><strong>MultiVerse</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td width="38%"><p>There could be little art in this last and final round of fencing.</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/prompt/3_0_p_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/vallex/3_0_5_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/infinityTTS/3_0_3_0.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="38%"><p>Look a little closer while our guide lets the light of his lamp fall upon the black wall at your side.</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/prompt/3_0_p_1.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/vallex/3_0_5_1.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/infinityTTS/3_0_3_1.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="38%"><p>It was youth and poverty and proximity and everything was young and kindly.</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/prompt/3_0_p_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/vallex/3_0_5_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/infinityTTS/3_0_3_2.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="38%"><p>He honours whatever he recognizes in himself, such morality equals self glorification.</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/prompt/3_0_p_3.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/vallex/3_0_5_3.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/infinityTTS/3_0_3_3.wav" type="audio/wav"></audio></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <h2 class="title is-5"><strong><p>VALL-E (Intra-lingual / EN)</p></strong></h2>
-        <table class="table">
-          <thead>
-            <tr>
-              <th align="center"><strong>Text</strong></th>
-              <th align="center"><strong>Prompt</strong></th>
-              <th align="center"><strong>Ground Truth</strong></th>
-              <th align="center"><strong>VALL-E</strong></th>
-              <th align="center"><strong>MultiVerse</strong></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td width="38%"><p>The army found the people in poverty and left them in comparative wealth.</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/prompt/2_0_p_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/gt/2_0_0_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/valle/2_0_4_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/infinityTTS/2_0_3_0.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="38%"><p>We’ve made a couple of albums.</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/prompt/2_0_p_1.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/gt/2_0_0_1.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/valle/2_0_4_1.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/infinityTTS/2_0_3_1.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="38%"><p>We have to reduce the number of plastic bags.</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/prompt/2_0_p_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/gt/2_0_0_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/valle/2_0_4_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/infinityTTS/2_0_3_2.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="38%"><p>So what is the campaign about?</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/prompt/2_0_p_3.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/gt/2_0_0_3.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/valle/2_0_4_3.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLE/Normal/infinityTTS/2_0_3_3.wav" type="audio/wav"></audio></td>
-            </tr>
-          </tbody>
-        </table>
-        <h2 class="title is-5"><strong><p>VALL-E X (Crossl-lingual / ZH -> EN)</p></strong></h2>
-        <table class="table">
-          <thead>
-            <tr>
-              <th align="center"><strong>Text</strong></th>
-              <th align="center"><strong>Prompt</strong></th>
-              <th align="center"><strong>VALL-E X</strong></th>
-              <th align="center"><strong>MultiVerse</strong></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td width="38%"><p>There could be little art in this last and final round of fencing.</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/prompt/3_0_p_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/vallex/3_0_5_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/infinityTTS/3_0_3_0.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="38%"><p>Look a little closer while our guide lets the light of his lamp fall upon the black wall at your side.</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/prompt/3_0_p_1.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/vallex/3_0_5_1.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/infinityTTS/3_0_3_1.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="38%"><p>It was youth and poverty and proximity and everything was young and kindly.</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/prompt/3_0_p_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/vallex/3_0_5_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/infinityTTS/3_0_3_2.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="38%"><p>He honours whatever he recognizes in himself, such morality equals self glorification.</p></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/prompt/3_0_p_3.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/vallex/3_0_5_3.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/exp_eng/VALLEX/Normal/infinityTTS/3_0_3_3.wav" type="audio/wav"></audio></td>
-            </tr>
-          </tbody>
-        </table>
+        <br>
 
         <h2 class="title is-3">Style transfer</h2>
-        <div class="content">
-          <p>
-            This section is for style transfer samples.
-          </p>
-        <h2 class="title is-5"><strong><p>Pair</p></strong></h2>
-        </div>
-        <table class="table">
-          <thead>
-            <tr>
-              <th align="center"><strong>Timbre prompt</strong></th>
-              <th align="center"><strong>Style prompt</strong></th>
-              <th align="center"><strong>Daft-exprt</strong></th>
-              <th align="center"><strong>MultiVerse</strong></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Timbre/pair/0.wav" type="audio/wav"></audio></td>
-              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Prompt/pair/0.wav" type="audio/wav"></audio></td>
-              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Daft/pair/0.wav.wav" type="audio/wav"></audio></td>
-              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/infi/pair/0.wav.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Timbre/pair/1.wav" type="audio/wav"></audio></td>
-              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Prompt/pair/1.wav" type="audio/wav"></audio></td>
-              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Daft/pair/1.wav.wav" type="audio/wav"></audio></td>
-              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/infi/pair/1.wav.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Timbre/pair/2.wav" type="audio/wav"></audio></td>
-              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Prompt/pair/2.wav" type="audio/wav"></audio></td>
-              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Daft/pair/2.wav.wav" type="audio/wav"></audio></td>
-              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/infi/pair/2.wav.wav" type="audio/wav"></audio></td>
-            </tr>
-          </tbody>
-        </table>
+        <img class="image-button" id="image6" src="static/images/button_off.png" alt="Toggle Button 6" onclick="toggleContent('section6')">
+        <div id="section6" class="hidden-content">
+          <div class="content">
+            <p>
+              This section is for style transfer samples.
+            </p>
+          <h2 class="title is-5"><strong><p>Pair</p></strong></h2>
+          </div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th align="center"><strong>Timbre prompt</strong></th>
+                <th align="center"><strong>Style prompt</strong></th>
+                <th align="center"><strong>Daft-exprt</strong></th>
+                <th align="center"><strong>MultiVerse</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Timbre/pair/0.wav" type="audio/wav"></audio></td>
+                <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Prompt/pair/0.wav" type="audio/wav"></audio></td>
+                <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Daft/pair/0.wav.wav" type="audio/wav"></audio></td>
+                <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/infi/pair/0.wav.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Timbre/pair/1.wav" type="audio/wav"></audio></td>
+                <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Prompt/pair/1.wav" type="audio/wav"></audio></td>
+                <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Daft/pair/1.wav.wav" type="audio/wav"></audio></td>
+                <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/infi/pair/1.wav.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Timbre/pair/2.wav" type="audio/wav"></audio></td>
+                <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Prompt/pair/2.wav" type="audio/wav"></audio></td>
+                <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Daft/pair/2.wav.wav" type="audio/wav"></audio></td>
+                <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/infi/pair/2.wav.wav" type="audio/wav"></audio></td>
+              </tr>
+            </tbody>
+          </table>
 
-        <h2 class="title is-5"><strong><p>Unpair</p></strong></h2>
-        <table class="table">
-          <thead>
-            <tr>
-              <th align="center"><strong>Timbre prompt</strong></th>
-              <th align="center"><strong>Style prompt</strong></th>
-              <th align="center"><strong>Daft-exprt</strong></th>
-              <th align="center"><strong>MultiVerse</strong></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Timbre/unpair/0.wav" type="audio/wav"></audio></td>
-              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Prompt/unpair/0.wav" type="audio/wav"></audio></td>
-              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Daft/unpair/0.wav.wav" type="audio/wav"></audio></td>
-              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/infi/unpair/0.wav.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Timbre/unpair/1.wav" type="audio/wav"></audio></td>
-              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Prompt/unpair/1.wav" type="audio/wav"></audio></td>
-              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Daft/unpair/1.wav.wav" type="audio/wav"></audio></td>
-              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/infi/unpair/1.wav.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Timbre/unpair/2.wav" type="audio/wav"></audio></td>
-              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Prompt/unpair/2.wav" type="audio/wav"></audio></td>
-              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Daft/unpair/2.wav.wav" type="audio/wav"></audio></td>
-              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/infi/unpair/2.wav.wav" type="audio/wav"></audio></td>
-            </tr>
-          </tbody>
-        </table>
+          <h2 class="title is-5"><strong><p>Unpair</p></strong></h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th align="center"><strong>Timbre prompt</strong></th>
+                <th align="center"><strong>Style prompt</strong></th>
+                <th align="center"><strong>Daft-exprt</strong></th>
+                <th align="center"><strong>MultiVerse</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Timbre/unpair/0.wav" type="audio/wav"></audio></td>
+                <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Prompt/unpair/0.wav" type="audio/wav"></audio></td>
+                <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Daft/unpair/0.wav.wav" type="audio/wav"></audio></td>
+                <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/infi/unpair/0.wav.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Timbre/unpair/1.wav" type="audio/wav"></audio></td>
+                <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Prompt/unpair/1.wav" type="audio/wav"></audio></td>
+                <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Daft/unpair/1.wav.wav" type="audio/wav"></audio></td>
+                <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/infi/unpair/1.wav.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Timbre/unpair/2.wav" type="audio/wav"></audio></td>
+                <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Prompt/unpair/2.wav" type="audio/wav"></audio></td>
+                <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/Daft/unpair/2.wav.wav" type="audio/wav"></audio></td>
+                <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/style_transfer/infi/unpair/2.wav.wav" type="audio/wav"></audio></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <br>
 
         <h2 class="title is-3">Controllability</h2>
-        <div class="content">
-          <p>
-            This section is for controllability samples.
-          </p>
-        <h2 class="title is-5"><strong><p>Pitch</p></strong></h2>
+        <img class="image-button" id="image7" src="static/images/button_off.png" alt="Toggle Button 7" onclick="toggleContent('section7')">
+        <div id="section7" class="hidden-content">
+          <div class="content">
+            <p>
+              This section is for controllability samples.
+            </p>
+          <h2 class="title is-5"><strong><p>Pitch</p></strong></h2>
+          </div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th align="center"><strong>-6</strong></th>
+                <th align="center"><strong>-4</strong></th>
+                <th align="center"><strong>-2</strong></th>
+                <th align="center"><strong>0</strong></th>
+                <th align="center"><strong>+2</strong></th>
+                <th align="center"><strong>+4</strong></th>
+                <th align="center"><strong>+6</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/pitch_control/wav/0_-6.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/pitch_control/wav/0_-4.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/pitch_control/wav/0_-2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/pitch_control/wav/0_0.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/pitch_control/wav/0_2.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/pitch_control/wav/0_4.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/pitch_control/wav/0_6.wav" type="audio/wav"></audio></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2 class="title is-5"><strong><p>Duration</p></strong></h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th align="center"><strong>0.5x</strong></th>
+                <th align="center"><strong>0</strong></th>
+                <th align="center"><strong>2x</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/duration_control/wav/0_2.0.wav" type="audio/wav"></audio></td>
+                <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/duration_control/wav/0_1.wav" type="audio/wav"></audio></td>
+                <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/duration_control/wav/0_0.5.wav" type="audio/wav"></audio></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <table class="table">
-          <thead>
-            <tr>
-              <th align="center"><strong>-6</strong></th>
-              <th align="center"><strong>-4</strong></th>
-              <th align="center"><strong>-2</strong></th>
-              <th align="center"><strong>0</strong></th>
-              <th align="center"><strong>+2</strong></th>
-              <th align="center"><strong>+4</strong></th>
-              <th align="center"><strong>+6</strong></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/pitch_control/wav/0_-6.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/pitch_control/wav/0_-4.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/pitch_control/wav/0_-2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/pitch_control/wav/0_0.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/pitch_control/wav/0_2.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/pitch_control/wav/0_4.wav" type="audio/wav"></audio></td>
-              <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/pitch_control/wav/0_6.wav" type="audio/wav"></audio></td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h2 class="title is-5"><strong><p>Duration</p></strong></h2>
-        <table class="table">
-          <thead>
-            <tr>
-              <th align="center"><strong>0.5x</strong></th>
-              <th align="center"><strong>0</strong></th>
-              <th align="center"><strong>2x</strong></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/duration_control/wav/0_2.0.wav" type="audio/wav"></audio></td>
-              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/duration_control/wav/0_1.wav" type="audio/wav"></audio></td>
-              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/duration_control/wav/0_0.5.wav" type="audio/wav"></audio></td>
-            </tr>
-          </tbody>
-        </table>
-
+        <br>
 
         <h2 class="title is-3">Appendix</h2>
-        <div class="content">
-          <p>
-            This section is for appendix samples.
-          </p>
-        <h2 class="title is-5"><strong><p>Analysis on content and style representations</p></strong></h2>
-        </div>
-        <img src="./static/images/multiverse.png"
-                    class="content_style-image"
-                    alt="Content and style representation image."/>
-        <table class="table">
-          <thead>
-            <tr>
-              <th align="center"><strong>Content represnetation</strong></th>
-              <th align="center"><strong>Style representation</strong></th>
-              <th align="center"><strong>MultiVerse</strong></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/appendix/content_style/filter.wav" type="audio/wav"></audio></td>
-              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/appendix/content_style/source.wav" type="audio/wav"></audio></td>
-              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/appendix/content_style/combined.wav" type="audio/wav"></audio></td>
-            </tr>
-          </tbody>
-        </table>
+        <img class="image-button" id="image8" src="static/images/button_off.png" alt="Toggle Button 8" onclick="toggleContent('section8')">
+        <div id="section8" class="hidden-content">
+          <div class="content">
+            <p>
+              This section is for appendix samples.
+            </p>
+          <h2 class="title is-5"><strong><p>Analysis on content and style representations</p></strong></h2>
+          </div>
+          <img src="./static/images/multiverse.png"
+                      class="content_style-image"
+                      alt="Content and style representation image."/>
+          <table class="table">
+            <thead>
+              <tr>
+                <th align="center"><strong>Content represnetation</strong></th>
+                <th align="center"><strong>Style representation</strong></th>
+                <th align="center"><strong>MultiVerse</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/appendix/content_style/filter.wav" type="audio/wav"></audio></td>
+                <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/appendix/content_style/source.wav" type="audio/wav"></audio></td>
+                <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/appendix/content_style/combined.wav" type="audio/wav"></audio></td>
+              </tr>
+            </tbody>
+          </table>
 
-        <h2 class="title is-5"><strong><p>Sample-adaptive kernel selection</p></strong></h2>
-        <img src="./static/images/adaptive_kernel_selection.png"
-                    class="adaptive-image"
-                    alt="adaptive image."/>
-        <table class="table">
-          <thead>
-            <tr>
-              <th align="center"><strong>MultiVerse w/o sample-adaptive kernel selection</strong></th>
-              <th align="center"><strong>MultiVerse</strong></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/appendix/adapt_noadapt/noadaptive_durationmatch.wav" type="audio/wav"></audio></td>
-              <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/appendix/adapt_noadapt/adaptive_durationmatch.wav" type="audio/wav"></audio></td>
-            </tr>
-          </tbody>
-        </table>
+          <h2 class="title is-5"><strong><p>Sample-adaptive kernel selection</p></strong></h2>
+          <img src="./static/images/adaptive_kernel_selection.png"
+                      class="adaptive-image"
+                      alt="adaptive image."/>
+          <table class="table">
+            <thead>
+              <tr>
+                <th align="center"><strong>MultiVerse w/o sample-adaptive kernel selection</strong></th>
+                <th align="center"><strong>MultiVerse</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/appendix/adapt_noadapt/noadaptive_durationmatch.wav" type="audio/wav"></audio></td>
+                <td width="12%" style="text-align: center;"><audio controls="" ><source src="static/samples/appendix/adapt_noadapt/adaptive_durationmatch.wav" type="audio/wav"></audio></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
     </div>
 
     <!-- Concurrent Work. -->
