@@ -11,7 +11,13 @@
     .hidden-content {
       display: none;
     }
-  </style>
+    /* Style for the image button */
+    .image-button {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+ </style>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-L7749G0HJZ"></script>
@@ -144,7 +150,9 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Zero-shot scenario (Intra-lingual / ENG)</h2>
-        <button onclick="toggleContent('section1')">섹션 1 토글</button>
+        <button onclick="toggleContent('section1')">
+          <img id="image1" src="static/images/button_off.png" alt="Toggle Button 1">
+        </button>
         <div id="section1" class="hidden-content">
           <div class="content">
             <p>
@@ -852,7 +860,14 @@
 <script>
   function toggleContent(sectionId) {
     var contentDiv = document.getElementById(sectionId);
-    contentDiv.style.display = (contentDiv.style.display === "none" || contentDiv.style.display === "") ? "block" : "none";
+    var imageElement = document.getElementById('image' + sectionId.charAt(sectionId.length - 1));
+    if (contentDiv.style.display === "none" || contentDiv.style.display === "") {
+      contentDiv.style.display = "block";
+      imageElement.src = "static/images/button_on.png";
+    } else {
+      contentDiv.style.display = "none";
+      imageElement.src = "static/images/button_off.png";
+    }
   }
  </script>
 
