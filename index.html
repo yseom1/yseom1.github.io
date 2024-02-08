@@ -13,12 +13,7 @@
     }
     /* Style for the image button */
     .image-button {
-      background: none;
-      border: none;
       cursor: pointer;
-      padding: 5px;
-    }
-    .image-button img {
       max-width: 100%;
       height: auto;
     }
@@ -155,9 +150,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Zero-shot scenario (Intra-lingual / ENG)</h2>
-        <button onclick="toggleContent('section1')">
-          <img id="image1" src="static/images/button_off.png" alt="Toggle Button 1">
-        </button>
+        <img class="image-button" src="static/images/button_off.png" alt="Toggle Button 1" onclick="toggleContent('section1')">
         <div id="section1" class="hidden-content">
           <div class="content">
             <p>
