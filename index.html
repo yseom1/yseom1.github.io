@@ -212,28 +212,46 @@
             </thead>
             <tbody>
               <tr>
-                <td width="20"><p>Ironman</p></td>
-                <td width="38%"><p>We were more interested in the technical condition of the station than in the commercial part.</p></td>
+                <td width="20%"><p>Ironman</p></td>
+                <td width="38%"><p>This paper introduces MultiVerse, a novel deep learning model for multi-task speech synthesis.</p></td>
                 <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/celeb/ironman_prompt.wav" type="audio/wav"></audio></td>
                 <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/celeb/ironman_syn.wav" type="audio/wav"></audio></td>
               </tr>
               <tr>
-                <td width="20"><p>Hulk</p></td>
-                <td width="38%"><p>We were more interested in the technical condition of the station than in the commercial part.</p></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/celeb/hulk_prompt.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/celeb/hulk_syn.wav" type="audio/wav"></audio></td>
-              </tr>
-              <tr>
-                <td width="20"><p>Captain America</p></td>
-                <td width="38%"><p>We were more interested in the technical condition of the station than in the commercial part.</p></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/celeb/captain_prompt.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/celeb/captain_syn.wav" type="audio/wav"></audio></td>
-              </tr>
-              <tr>
-                <td width="20"><p>Spiderman</p></td>
-                <td width="38%"><p>We were more interested in the technical condition of the station than in the commercial part.</p></td>
+                <td width="20%"><p>Spiderman</p></td>
+                <td width="38%"><p>Addressing the challenges of generalization, we employ a disentangled modeling for speech that separates content, style and prosody.</p></td>
                 <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/celeb/spiderman_prompt.wav" type="audio/wav"></audio></td>
                 <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/celeb/spiderman_syn.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="20%"><p>Wanda</p></td>
+                <td width="38%"><p>To this end, our multi-task TTS model utilizes a source-filter model for feature disentanglement and prompt-based auto-regressive prosody modeling.</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/celeb/wanda_prompt.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/celeb/wanda_syn.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="20%"><p>Blackwidow</p></td>
+                <td width="38%"><p>The proposed model excels in zero-shot synthesis, cross-lingual synthesis, and style transfer.</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/celeb/blackwidow_prompt.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/celeb/blackwidow_syn.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="20%"><p>Homer Simpson</p></td>
+                <td width="38%"><p>Additionally, it handles these tasks with a unified approach, consolidating them within a single, versatile framework.</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/celeb/simpson_prompt.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/celeb/simpson_syn.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="20%"><p>Marge Simpson</p></td>
+                <td width="38%"><p>Leveraging disentangled modeling, MultiVerse achieves robust generalization, requiring relatively less training data compared to data-driven approaches.</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/celeb/marge_prompt.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/celeb/marge_syn.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="20%"><p>Jocker</p></td>
+                <td width="38%"><p>Experimental results demonstrate its remarkable zero-shot synthesis, even in cross-lingual scenarios, producing enhanced speech intelligibility, speaker similarity, and prosody similarity.</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/celeb/jocker_prompt.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/celeb/jocker_syn.wav" type="audio/wav"></audio></td>
               </tr>
             </tbody>
           </table>
@@ -264,7 +282,7 @@
                 <th align="center"><strong>Text</strong></th>
                 <th align="center"><strong>Prompt</strong></th>
                 <th align="center"><strong>Ground Truth</strong></th>
-                <th align="center"><strong>GANSpeech</strong></th>
+                <th align="center"><strong>GANSpeech+</strong></th>
                 <th align="center"><strong>YourTTS</strong></th>
                 <th align="center"><strong>MultiVerse</strong></th>
               </tr>
@@ -311,7 +329,7 @@
                 <th align="center"><strong>Text</strong></th>
                 <th align="center"><strong>Prompt</strong></th>
                 <th align="center"><strong>Ground Truth</strong></th>
-                <th align="center"><strong>GANSpeech</strong></th>
+                <th align="center"><strong>GANSpeech+</strong></th>
                 <th align="center"><strong>YourTTS</strong></th>
                 <th align="center"><strong>MultiVerse</strong></th>
               </tr>
@@ -370,7 +388,7 @@
                 <th align="center"><strong>Text</strong></th>
                 <th align="center"><strong>Prompt</strong></th>
                 <th align="center"><strong>Ground Truth</strong></th>
-                <th align="center"><strong>GANSpeech</strong></th>
+                <th align="center"><strong>GANSpeech+</strong></th>
                 <th align="center"><strong>YourTTS</strong></th>
                 <th align="center"><strong>MultiVerse</strong></th>
               </tr>
@@ -417,7 +435,7 @@
                 <th align="center"><strong>Text</strong></th>
                 <th align="center"><strong>Prompt</strong></th>
                 <th align="center"><strong>Ground Truth</strong></th>
-                <th align="center"><strong>GANSpeech</strong></th>
+                <th align="center"><strong>GANSpeech+</strong></th>
                 <th align="center"><strong>YourTTS</strong></th>
                 <th align="center"><strong>MultiVerse</strong></th>
               </tr>
@@ -475,7 +493,7 @@
               <tr>
                 <th align="center"><strong>Text</strong></th>
                 <th align="center"><strong>Prompt</strong></th>
-                <th align="center"><strong>GANSpeech</strong></th>
+                <th align="center"><strong>GANSpeech+</strong></th>
                 <th align="center"><strong>YourTTS</strong></th>
                 <th align="center"><strong>MultiVerse</strong></th>
               </tr>
@@ -517,7 +535,7 @@
               <tr>
                 <th align="center"><strong>Text</strong></th>
                 <th align="center"><strong>Prompt</strong></th>
-                <th align="center"><strong>GANSpeech</strong></th>
+                <th align="center"><strong>GANSpeech+</strong></th>
                 <th align="center"><strong>YourTTS</strong></th>
                 <th align="center"><strong>MultiVerse</strong></th>
               </tr>
@@ -571,7 +589,7 @@
               <tr>
                 <th align="center"><strong>Text</strong></th>
                 <th align="center"><strong>Prompt</strong></th>
-                <th align="center"><strong>GANSpeech</strong></th>
+                <th align="center"><strong>GANSpeech+</strong></th>
                 <th align="center"><strong>YourTTS</strong></th>
                 <th align="center"><strong>MultiVerse</strong></th>
               </tr>
@@ -613,7 +631,7 @@
               <tr>
                 <th align="center"><strong>Text</strong></th>
                 <th align="center"><strong>Prompt</strong></th>
-                <th align="center"><strong>GANSpeech</strong></th>
+                <th align="center"><strong>GANSpeech+</strong></th>
                 <th align="center"><strong>YourTTS</strong></th>
                 <th align="center"><strong>MultiVerse</strong></th>
               </tr>
