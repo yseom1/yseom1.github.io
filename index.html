@@ -213,45 +213,51 @@
             <tbody>
               <tr>
                 <td width="20%"><p>Iron man</p></td>
-                <td width="38%"><p>This paper introduces MultiVerse, a novel deep learning model for multi-task speech synthesis.</p></td>
+                <td width="38%"><p>Text-to-speech (TTS) systems that scale up the amount of training data have achieved significant improvements in zero-shot speech synthesis.</p></td>
                 <td width="10%" style="text-align: center;"><audio controls="" controlsList="nodownload"><source src="static/samples/celeb/ironman_prompt.wav" type="audio/wav"></audio></td>
                 <td width="10%" style="text-align: center;"><audio controls="" controlsList="nodownload"><source src="static/samples/celeb/ironman_syn.wav" type="audio/wav"></audio></td>
               </tr>
               <tr>
                 <td width="20%"><p>Spider-man</p></td>
-                <td width="38%"><p>Addressing the challenges of generalization, we employ a disentangled modeling for speech that separates content, style and prosody.</p></td>
+                <td width="38%"><p>However, these systems have certain limitations: they require a large amount of training data, which increases costs, and often overlook prosody similarity.</p></td>
                 <td width="10%" style="text-align: center;"><audio controls="" controlsList="nodownload" ><source src="static/samples/celeb/spiderman_prompt.wav" type="audio/wav"></audio></td>
                 <td width="10%" style="text-align: center;"><audio controls="" controlsList="nodownload"><source src="static/samples/celeb/spiderman_syn.wav" type="audio/wav"></audio></td>
               </tr>
               <tr>
                 <td width="20%"><p>Wanda maximoff</p></td>
-                <td width="38%"><p>To this end, our multi-task TTS model utilizes a source-filter model for feature disentanglement and prompt-based auto-regressive prosody modeling.</p></td>
+                <td width="38%"><p>To address these issues, we propose MultiVerse, a zero-shot multi-task TTS system capable of performing TTS and speech style transfer in zero-shot and cross-lingual conditions, while requiring much less training data than traditional data-driven approaches.</p></td>
                 <td width="10%" style="text-align: center;"><audio controls="" controlsList="nodownload"><source src="static/samples/celeb/wanda_prompt.wav" type="audio/wav"></audio></td>
                 <td width="10%" style="text-align: center;"><audio controls="" controlsList="nodownload"><source src="static/samples/celeb/wanda_syn.wav" type="audio/wav"></audio></td>
               </tr>
               <tr>
                 <td width="20%"><p>Black widow</p></td>
-                <td width="38%"><p>The proposed model excels in zero-shot synthesis, cross-lingual synthesis, and style transfer.</p></td>
+                <td width="38%"><p>To ensure zero-shot performance even with limited data, we leverage source-filter theory-based disentanglement, utilizing the prompt for modeling filter-related and source-related representations.</p></td>
                 <td width="10%" style="text-align: center;"><audio controls="" controlsList="nodownload"><source src="static/samples/celeb/blackwidow_prompt.wav" type="audio/wav"></audio></td>
                 <td width="10%" style="text-align: center;"><audio controls="" controlsList="nodownload"><source src="static/samples/celeb/blackwidow_syn.wav" type="audio/wav"></audio></td>
               </tr>
               <tr>
-                <td width="20%"><p>Homer Simpson</p></td>
-                <td width="38%"><p>Additionally, it handles these tasks with a unified approach, consolidating them within a single, versatile framework.</p></td>
-                <td width="10%" style="text-align: center;"><audio controls="" controlsList="nodownload"><source src="static/samples/celeb/simpson_prompt.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" controlsList="nodownload"><source src="static/samples/celeb/simpson_syn.wav" type="audio/wav"></audio></td>
-              </tr>
-              <tr>
                 <td width="20%"><p>Olaf (Frozen)</p></td>
-                <td width="38%"><p>Leveraging disentangled modeling, MultiVerse achieves robust generalization, requiring relatively less training data compared to data-driven approaches.</p></td>
+                <td width="38%"><p>Additionally, to further enhance prosody similarity, we adopt a prosody modeling approach combining prompt-based autoregressive and non-autoregressive methods.</p></td>
                 <td width="10%" style="text-align: center;"><audio controls="" controlsList="nodownload"><source src="static/samples/celeb/olaf_prompt.wav" type="audio/wav"></audio></td>
                 <td width="10%" style="text-align: center;"><audio controls="" controlsList="nodownload"><source src="static/samples/celeb/olaf_syn.wav" type="audio/wav"></audio></td>
               </tr>
               <tr>
                 <td width="20%"><p>Jocker</p></td>
-                <td width="38%"><p>Experimental results demonstrate its remarkable zero-shot synthesis, even in cross-lingual scenarios, producing enhanced speech intelligibility, speaker similarity, and prosody similarity.</p></td>
+                <td width="38%"><p>Evaluations demonstrate the remarkable zero-shot multi-task TTS performance of MultiVerse and show that MultiVerse not only achieves zero-shot TTS performance comparable to data-driven TTS systems with much less data.</p></td>
                 <td width="10%" style="text-align: center;"><audio controls="" controlsList="nodownload"><source src="static/samples/celeb/jocker_prompt.wav" type="audio/wav"></audio></td>
                 <td width="10%" style="text-align: center;"><audio controls="" controlsList="nodownload"><source src="static/samples/celeb/jocker_syn.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="20%"><p>Captain america</p></td>
+                <td width="38%"><p>It also significantly outperforms other zero-shot TTS systems trained with the same small amount of data.</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" controlsList="nodownload"><source src="static/samples/celeb/captain_prompt.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" controlsList="nodownload"><source src="static/samples/celeb/captain_syn.wav" type="audio/wav"></audio></td>
+              </tr>
+              <tr>
+                <td width="20%"><p>Homer Simpson</p></td>
+                <td width="38%"><p>In particular, our innovative prosody modeling technique enables Multiverse to generate speech with a high degree of prosody similarity to the given prompts.</p></td>
+                <td width="10%" style="text-align: center;"><audio controls="" controlsList="nodownload"><source src="static/samples/celeb/simpson_prompt.wav" type="audio/wav"></audio></td>
+                <td width="10%" style="text-align: center;"><audio controls="" controlsList="nodownload"><source src="static/samples/celeb/simpson_syn.wav" type="audio/wav"></audio></td>
               </tr>
             </tbody>
           </table>
@@ -783,32 +789,11 @@
                 <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/infinity/01.wav" type="audio/wav"></audio></td>
               </tr>
               <tr>
-                <td width="38%"><p>For if he's anywhere on the farm, we can send for him in a minute.</p></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/prompt/02.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/gt/02.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/naturalspeech2/02.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/infinity/02.wav" type="audio/wav"></audio></td>
-              </tr>
-              <tr>
-                <td width="38%"><p>Their piety would be like their names, like their faces, like their clothes, and it was idle for him to tell himself that their humble and contrite hearts it might be paid a far-richer tribute of devotion than his had ever been. A gift tenfold more acceptable than his elaborate adoration.</p></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/prompt/03.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/gt/03.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/naturalspeech2/03.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/infinity/03.wav" type="audio/wav"></audio></td>
-              </tr>
-              <tr>
                 <td width="38%"><p>The air and the earth are curiously mated and intermingled as if the one were the breath of the other.</p></td>
                 <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/prompt/04.wav" type="audio/wav"></audio></td>
                 <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/gt/04.wav" type="audio/wav"></audio></td>
                 <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/naturalspeech2/04.wav" type="audio/wav"></audio></td>
                 <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/infinity/04.wav" type="audio/wav"></audio></td>
-              </tr>
-              <tr>
-                <td width="38%"><p>I had always known him to be restless in his manner, but on this particular occasion he was in such a state of uncontrollable agitation that it was clear something very unusual had occurred.</p></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/prompt/05.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/gt/05.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/naturalspeech2/05.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/infinity/05.wav" type="audio/wav"></audio></td>
               </tr>
               <tr>
                 <td width="38%"><p>His death in this conjuncture was a public misfortune.</p></td>
@@ -839,25 +824,11 @@
                 <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/infinity/09.wav" type="audio/wav"></audio></td>
               </tr>
               <tr>
-                <td width="38%"><p>Truth is the child of time.</p></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/prompt/10.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/gt/10.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/naturalspeech2/10.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/infinity/10.wav" type="audio/wav"></audio></td>
-              </tr>
-              <tr>
                 <td width="38%"><p>We have a long way to go this week.</p></td>
                 <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/prompt/11.wav" type="audio/wav"></audio></td>
                 <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/gt/11.wav" type="audio/wav"></audio></td>
                 <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/naturalspeech2/11.wav" type="audio/wav"></audio></td>
                 <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/infinity/11.wav" type="audio/wav"></audio></td>
-              </tr>
-              <tr>
-                <td width="38%"><p>Maybe we expected too much from the fixture.</p></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/prompt/12.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/gt/12.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/naturalspeech2/12.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/infinity/12.wav" type="audio/wav"></audio></td>
               </tr>
               <tr>
                 <td width="38%"><p>We will turn the corner.</p></td>
@@ -873,20 +844,6 @@
                 <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/naturalspeech2/14.wav" type="audio/wav"></audio></td>
                 <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/infinity/14.wav" type="audio/wav"></audio></td>
               </tr>
-              <tr>
-                <td width="38%"><p>Subs not used, McKenzie, Ritchie.</p></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/prompt/15.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/gt/15.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/naturalspeech2/15.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/infinity/15.wav" type="audio/wav"></audio></td>
-              </tr>
-              <tr>
-                <td width="38%"><p>That's the only thing I will say.</p></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/prompt/16.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/gt/16.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/naturalspeech2/16.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/NaturalSpeech2/ZS/infinity/16.wav" type="audio/wav"></audio></td>
-              </tr>
             </tbody>
           </table>
           <h2 class="title is-5"><strong><p>Mega-TTS (Intra-lingual / EN)</p></strong></h2>
@@ -901,13 +858,6 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td width="38%"><p>Yea, his honourable worship is within, but he hath a godly minister or two with him, and likewise a leech.</p></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Megatts/ZS/prompt/1.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Megatts/ZS/gt/1.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Megatts/ZS/megatts/1.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Megatts/ZS/infinity/1.wav" type="audio/wav"></audio></td>
-              </tr>
               <tr>
                 <td width="38%"><p>Instead of shoes, the old man wore boots with turnover tops, and his blue coat had wide cuffs of gold braid.</p></td>
                 <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Megatts/ZS/prompt/2.wav" type="audio/wav"></audio></td>
@@ -1008,36 +958,6 @@
             </thead>
             <tbody>
               <tr>
-                <td width="38%"><p>Thus did this humane and right minded father comfort his unhappy daughter and her mother embracing her again did all she could to soothe her feelings.</p></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/ZS/prompt/00.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/ZS/voicebox/vb_00.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/ZS/infinity/inf_00.wav" type="audio/wav"></audio></td>
-              </tr>
-              <tr>
-                <td width="38%"><p>They moved thereafter cautiously about the hut groping before and about them to find something to show that warrenton had fulfilled his mission.</p></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/ZS/prompt/01.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/ZS/voicebox/vb_01.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/ZS/infinity/inf_01.wav" type="audio/wav"></audio></td>
-              </tr>
-              <tr>
-                <td width="38%"><p>And lay me down in thy cold bed and leave my shining lot.</p></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/ZS/prompt/02.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/ZS/voicebox/vb_02.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/ZS/infinity/inf_02.wav" type="audio/wav"></audio></td>
-              </tr>
-              <tr>
-                <td width="38%"><p>And the whole night the tree stood still and in deep thought.</p></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/ZS/prompt/03.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/ZS/voicebox/vb_03.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/ZS/infinity/inf_03.wav" type="audio/wav"></audio></td>
-              </tr>
-              <tr>
-                <td width="38%"><p>Instead of shoes the old man wore boots with turnover tops and his blue coat had wide cuffs of gold braid.</p></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/ZS/prompt/04.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/ZS/voicebox/vb_04.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/ZS/infinity/inf_04.wav" type="audio/wav"></audio></td>
-              </tr>
-              <tr>
                 <td width="38%"><p>The army found the people in poverty and left them in comparative wealth.</p></td>
                 <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/ZS/prompt/05.wav" type="audio/wav"></audio></td>
                 <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/ZS/voicebox/vb_05.wav" type="audio/wav"></audio></td>
@@ -1054,18 +974,6 @@
                 <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/ZS/prompt/08.wav" type="audio/wav"></audio></td>
                 <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/ZS/voicebox/vb_08.wav" type="audio/wav"></audio></td>
                 <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/ZS/infinity/inf_08.wav" type="audio/wav"></audio></td>
-              </tr>
-              <tr>
-                <td width="38%"><p>Rather a hypothetical question colonel but i should say it might be a fifty fifty proposition.</p></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/ZS/prompt/09.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/ZS/voicebox/vb_09.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/ZS/infinity/inf_09.wav" type="audio/wav"></audio></td>
-              </tr>
-              <tr>
-                <td width="38%"><p>How much wood could a woodchuck chuck if a woodchuck could chuck wood.</p></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/ZS/prompt/10.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/ZS/voicebox/vb_10.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/ZS/infinity/inf_10.wav" type="audio/wav"></audio></td>
               </tr>
               <tr>
                 <td width="38%"><p>When feline magicians enchant the city and crafty canine illusionists work to restore balance, don't miss the uproarious clash in magic and mischief. the paws of mystery.</p></td>
@@ -1111,22 +1019,10 @@
                 <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/CL/infinity/esp_inf_0.wav" type="audio/wav"></audio></td>
               </tr>
               <tr>
-                <td width="38%"><p>(ES -> EN) So the knight said that he would do that and thereupon they parted the one party going the one way and the other party going the other way.</p></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/CL/prompt/esp_1.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/CL/voicebox/esp_vb_1.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/CL/infinity/esp_inf_1.wav" type="audio/wav"></audio></td>
-              </tr>
-              <tr>
                 <td width="38%"><p>(FR -> EN) It is more than probable he might learn of him the grounds upon which he accustomed himself to so spare a diet fifteen to what purpose said solon should i trouble him.</p></td>
                 <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/CL/prompt/fr_0.wav" type="audio/wav"></audio></td>
                 <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/CL/voicebox/fr_vb_0.wav" type="audio/wav"></audio></td>
                 <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/CL/infinity/fr_inf_0.wav" type="audio/wav"></audio></td>
-              </tr>
-              <tr>
-                <td width="38%"><p>(FR -> EN) We see by this example that admirable as is the progress accomplished in certain regions of physics there still exist many over neglected regions which remain in painful darkness.</p></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/CL/prompt/fr_1.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/CL/voicebox/fr_vb_1.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/CL/infinity/fr_inf_1.wav" type="audio/wav"></audio></td>
               </tr>
               <tr>
                 <td width="38%"><p>(DE -> EN) Herodotus describing a war which had been going on for some years between the lydians and the medes gives the following account of the circumstances which led to its premature termination.</p></td>
@@ -1135,34 +1031,16 @@
                 <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/CL/infinity/ger_inf_0.wav" type="audio/wav"></audio></td>
               </tr>
               <tr>
-                <td width="38%"><p>(DE -> EN) As he washed and scrubbed his neglected fur coat making a complete and fresh toilet suitable for the kitchen the next morning when the farmer’s wife came into the kitchen such a sight met her eyes.</p></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/CL/prompt/ger_1.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/CL/voicebox/ger_vb_1.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/CL/infinity/ger_inf_1.wav" type="audio/wav"></audio></td>
-              </tr>
-              <tr>
                 <td width="38%"><p>(PL -> EN) When indeed we consider how busily some insects have been shown to be engaged in conveying anther dust from flower to flower.</p></td>
                 <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/CL/prompt/pol_0.wav" type="audio/wav"></audio></td>
                 <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/CL/voicebox/pol_vb_0.wav" type="audio/wav"></audio></td>
                 <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/CL/infinity/pol_inf_0.wav" type="audio/wav"></audio></td>
               </tr>
               <tr>
-                <td width="38%"><p>(PL -> EN) His manner was cold even stern but he spoke always to the point and so clearly and decidedly that he seldom failed to impress his words on the recollection of his hearers.</p></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/CL/prompt/pol_1.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/CL/voicebox/pol_vb_1.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/CL/infinity/pol_inf_1.wav" type="audio/wav"></audio></td>
-              </tr>
-              <tr>
                 <td width="38%"><p>(PT -> EN) When they imported the negation of such or such a particular mode of agency for instance not to strike such a person or such a thing or in such a direction ten.</p></td>
                 <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/CL/prompt/pt_0.wav" type="audio/wav"></audio></td>
                 <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/CL/voicebox/pt_vb_0.wav" type="audio/wav"></audio></td>
                 <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/CL/infinity/pt_inf_0.wav" type="audio/wav"></audio></td>
-              </tr>
-              <tr>
-                <td width="38%"><p>(PT -> EN) Passed within a hundred miles of syracuse a fact which is stated almost in those very words by the two historians who have recorded the doings of agathocles and his fleet in those years.</p></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/CL/prompt/pt_1.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/CL/voicebox/pt_vb_1.wav" type="audio/wav"></audio></td>
-                <td width="10%" style="text-align: center;"><audio controls="" ><source src="static/samples/Rebuttal/Voicebox/CL/infinity/pt_inf_1.wav" type="audio/wav"></audio></td>
               </tr>
             </tbody>
           </table>
